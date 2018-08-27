@@ -3,7 +3,9 @@ div
   h2 Page {{ id }}
   p {{ text }}
 
-  ul
+  p(v-if="gameOver") Game over
+  
+  ul(v-else)
     li(v-for="link in links")
       Link(v-bind="link")
 </template>
@@ -27,6 +29,9 @@ export default {
     },
     links() {
       return this.getPageById(this.id).links;
+    },
+    gameOver() {
+      return this.links.length === 0;
     }
   }
 };
