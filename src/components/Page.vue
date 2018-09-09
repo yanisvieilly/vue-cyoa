@@ -2,7 +2,9 @@
 div
   p {{ text }}
 
-  p(v-if="gameOver") Game over
+  div(v-if="gameOver")
+    p Game over!
+    router-link(:to="`/pages/1`") Retourner au début de l'histoire
   
   ul(v-else)
     li(v-for="link in links")
