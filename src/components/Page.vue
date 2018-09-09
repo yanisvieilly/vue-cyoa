@@ -16,6 +16,8 @@ import { mapGetters } from "vuex";
 
 import Link from "./Link";
 
+const VICTORY_PAGE_ID = "27";
+
 export default {
   components: {
     Link
@@ -32,7 +34,7 @@ export default {
       return this.getPageById(this.id).links;
     },
     gameOver() {
-      return this.links.length === 0;
+      return this.links.length === 0 && this.id !== VICTORY_PAGE_ID;
     }
   }
 };
