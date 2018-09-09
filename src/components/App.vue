@@ -17,11 +17,15 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  margin: auto;
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  margin: 40px auto;
   max-width: 640px;
 }
 
 .title {
+  font-family: "Permanent Marker", cursive;
   line-height: 1.2;
 }
 </style>
