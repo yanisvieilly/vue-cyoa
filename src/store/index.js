@@ -49,16 +49,16 @@ export default new Vuex.Store({
       "5": {
         id: "5",
         text:
-          "« Désolé, mais c’est raté. » Il hausse les épaules, reprend ses cartes et son dîner, mais garde bien entendu ta pièce d’or. Plusieurs choix s’offrent à toi maintenant.",
+          "« Désolé, mais c’est raté. » Il hausse les épaules, reprend ses cartes et son dîner, mais garde bien entendu ta pièce d’or. Voyant que tu es déçue, il s’arrête à nouveau de dîner, puis se tourne vers toi. « Allez, prends-la ! Je n’en ai plus besoin de toute façon. » Il te remet la carte de la région qui, bien qu’assez abimée, est très détaillée et devrait te permettre de ne pas te perdre facilement. Plusieurs choix s’offrent à toi maintenant.",
         links: [
           {
             destination: "3",
-            text: "Et si j’oubliais ça avec un mètre de shots ?"
+            text: "La soirée commence ! Un mètre de shots !"
           },
           {
             destination: "8",
             text:
-              "Assez perdu de temps à la taverne. En route ! (Tu te diriges vers la sortie)"
+              "Une affaire qui marche ! Il est temps de se mettre en route ! (Tu te diriges vers la sortie)"
           }
         ]
       },
