@@ -1,5 +1,5 @@
 <template lang="pug">
-router-link(:to="`/pages/${destination}`") {{ text }}
+router-link(:to="`/pages/${destination}`" class="link") {{ text }}
 </template>
 
 <script>
@@ -16,3 +16,14 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.link {
+  color: #ff4c73;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+</style>

@@ -3,8 +3,8 @@ div.page
   p {{ text }}
 
   div(v-if="gameOver")
-    p Game over!
-    router-link(:to="`/pages/1`") Retourner au début de l'histoire
+    p.game-over Game over!
+    Link(destination=1 text="Retourner au début de l'histoire")
   
   ul(v-else)
     li(v-for="link in links")
@@ -41,5 +41,9 @@ export default {
 <style lang="scss" scoped>
 .page {
   line-height: 1.6;
+}
+
+.game-over {
+  font-weight: bold;
 }
 </style>
