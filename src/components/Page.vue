@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div.page
   p {{ text }}
 
   div(v-if="gameOver")
@@ -37,3 +37,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.page {
+  line-height: 1.6;
+}
+</style>

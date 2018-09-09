@@ -1,6 +1,6 @@
 <template lang="pug">
 .container
-  h1 L'anniversaire dont vous êtes l'héroïne
+  h1.title L'anniversaire dont vous êtes l'héroïne
 
   Page
 </template>
@@ -16,10 +16,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 640px) {
-  .container {
-    margin: auto;
-    max-width: 640px;
-  }
+.container {
+  margin: auto;
+  max-width: 640px;
+}
+
+.title {
+  line-height: 1.2;
 }
 </style>
