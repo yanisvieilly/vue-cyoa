@@ -1,6 +1,5 @@
 <template lang="pug">
 div
-  h2 Page {{ id }}
   p {{ text }}
 
   p(v-if="gameOver") Game over
