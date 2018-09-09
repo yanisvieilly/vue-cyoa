@@ -6,5 +6,8 @@ import Page from "./components/Page";
 Vue.use(VueRouter);
 
 export default new VueRouter({
-  routes: [{ path: "/pages/:id", component: Page }]
+  routes: [
+    { path: "/pages/:id", component: Page },
+    { path: "*", redirect: "/pages/1" }
+  ]
 });
