@@ -12,7 +12,7 @@ export default new Vuex.Store({
           "En tant que mercenaire, tu as été envoyée en mission par le roi d’une lointaine contrée pour trouver et ramener la légendaire pinte d’or. Ce n’est pas la porte à côté, il va falloir traverser quelques marais et autres caves obscures. Pensant à l’aventure qui t’attends, tu franchis les portes du château, puis descends vers le village. Déambulant dans les ruelles de celui-ci, tu passes devant une taverne, le Klon, et envisages d’y passer un peu de temps avant de réellement te mettre en route.",
         links: [
           { destination: "6", text: "Juste un verre." },
-          { destination: "8", text: "Le temps presse, le verre attendra." }
+          { destination: "29", text: "Le temps presse, le verre attendra." }
         ]
       },
       "2": {
@@ -76,7 +76,7 @@ export default new Vuex.Store({
             text: "Un verre de vin."
           },
           {
-            destination: "8",
+            destination: "29",
             text:
               "Tout compte fait, c’était une mauvaise idée. Je vais reprendre la route. (Tu te diriges vers la sortie)"
           }
@@ -225,7 +225,7 @@ export default new Vuex.Store({
       "18": {
         id: "18",
         text:
-          "Tu décides de sortir la carte que tu avais gagnée à la taverne. Tu réalises assez vite que celle-ci est magique, car elle semble indiquer ta position. En effet, un point de couleur bleue sur le papier a l’air de se déplacer en même temps que toi. Tu peux également voir que la grotte où tu as passé la nuit est indiquée et a même un nom : Airom. Prenant à peine le temps de faire attention à ce très mauvais anagramme de l’auteur, tu décides de suivre un chemin en pointillés qui débute à peu près là où tu te situes actuellement. En rangeant la carte et observant la paroi près de l’entrée de la grotte, tu distingues un renfoncement qui n’a vraisemblablement pas été fait naturellement. Posant à peine ta main à l’intérieur, la paroi recule et laisse place à un passage éclairé par des torches similaires à celles que tu avais remarquées dans la grotte. Il s’agit sans doute du chemin en pointillés indiqué sur la carte.",
+          "Tu décides de sortir ta carte. Tu réalises assez vite que celle-ci est magique, car elle semble indiquer ta position. En effet, un point de couleur bleue sur le papier a l’air de se déplacer en même temps que toi. Tu peux également voir que la grotte où tu as passé la nuit est indiquée et a même un nom : Airom. Prenant à peine le temps de faire attention à ce très mauvais anagramme de l’auteur, tu décides de suivre un chemin en pointillés qui débute à peu près là où tu te situes actuellement. En rangeant la carte et observant la paroi près de l’entrée de la grotte, tu distingues un renfoncement qui n’a vraisemblablement pas été fait naturellement. Posant à peine ta main à l’intérieur, la paroi recule et laisse place à un passage éclairé par des torches similaires à celles que tu avais remarquées dans la grotte. Il s’agit sans doute du chemin en pointillés indiqué sur la carte.",
         links: [
           {
             destination: "13",
@@ -345,8 +345,19 @@ export default new Vuex.Store({
           "Ton voisin est un peu déçu, mais hausse les épaules et se remet à son dîner. Ton verre maintenant terminé, tu décides de te mettre en route. Tu dis au revoir au tavernier et marches d’un pas décidé vers la sortie.",
         links: [
           {
-            destination: "8",
+            destination: "29",
             text: "Vers l'aventure !"
+          }
+        ]
+      },
+      "29": {
+        id: "29",
+        text:
+          "Alors que tu approches de la sortie du village, tu entends quelqu’un crier derrière toi : « Hé ! Attends ! Tu as oublié quelque chose ! » Tu te retournes. C’est le roi. Il arrive essoufflé. « Tiens, prends ça, ça devrait t’aider dans ta quête. » Il te remet une carte de la région qui, bien qu’assez abimée, est très détaillée et devrait te permettre de ne pas te perdre facilement. « Allez, bonne chance ! » Tu te remets en route.",
+        links: [
+          {
+            destination: "8",
+            text: "Passer les portes du village."
           }
         ]
       }
